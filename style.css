@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  width: 100%;
+  background-color: #a9a6a6;
+  height: 90vh;
+}
+
+/*header*/
+
+.nav-bar {
+  width: 100%;
+  background-color: rgb(12, 3, 34);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  /* position: relative;
+    top: 0; */
+}
+
+#titulo {
+  font-family: Helvetica;
+  font-weight: 500;
+  color: white;
+}
+
+#logo-empresa {
+  color: #fff;
+  font-size: 35px;
+  padding-right: 5px;
+}
+
+#titulo-empresa {
+  color: #fff;
+  font-size: 20px;
+}
+
+.btn {
+  height: 40px;
+  width: 60px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(255, 128, 0);
+  text-align: center;
+  transition: 1s;
+  align-items: center;
+  margin-right: 13px;
+}
+
+.btn > a {
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: rgb(170, 85, 1);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.info-usuario {
+  display: flex;
+  align-items: center;
+  margin: 2px;
+  color: white;
+}
+
+#logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 7px;
+}
+
+/*Barra Lateral*/
+
+nav.menu-lateral {
+  width: 65px;
+  height: 100%;
+  background-color: rgb(12, 3, 34);
+  padding: 40px 0 40px;
+  transition: 1s;
+  overflow: hidden;
+  /* position: fixed;
+    left: 0; */
+}
+
+nav.menu-lateral:hover {
+  width: 200px;
+}
+
+ul {
+  height: 100%;
+  list-style-type: none;
+  padding: 0px;
+}
+
+ul li.item-menu {
+  transition: 0.3s;
+}
+
+ul li.item-menu:hover {
+  background-color: black;
+}
+
+ul li.item-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px;
+  display: flex;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+ul li.item-menu a .text-link {
+  margin-left: 20px;
+}
+
+ul li.item-menu a .icon i {
+  font-size: 30px;
+}
