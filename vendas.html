@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Produto</title>
+    <title>Vendas</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -99,18 +99,7 @@
 
         /*Barra Lateral*/
 
-       
-       html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.container-principal {
-    height: 100%;
-    /* Outros estilos necessários */
-}
-
+     /* Estilos padrão para dispositivos maiores */
 nav.menu-lateral {
     width: 65px;
     height: 100%;
@@ -119,6 +108,76 @@ nav.menu-lateral {
     transition: 1s;
     overflow: hidden;
 }
+
+.table {
+    width: 100%;
+    /* Outros estilos necessários */
+}
+
+/* Estilos para dispositivos com largura até 768px */
+@media (max-width: 768px) {
+    nav.menu-lateral {
+        width: 100%; /* Barra lateral ocupa a largura total */
+        height: auto; /* Altura automática baseada no conteúdo */
+        padding: 20px 0; /* Padding reduzido */
+    }
+
+    .table {
+        width: 100%;
+        overflow-x: auto; /* Permite rolagem horizontal se necessário */
+    }
+}
+
+/* Estilos para dispositivos com largura até 480px */
+@media (max-width: 480px) {
+    nav.menu-lateral {
+        padding: 10px 0; /* Padding ainda mais reduzido */
+    }
+
+    .table .text-end {
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaços entre as células */
+}
+
+.table th, .table td {
+    padding: 12px 15px; /* Aumenta o padding para mais espaço */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.table thead {
+    background-color: #009879; /* Cor de fundo para o cabeçalho */
+    color: black; /* Texto branco para contraste */
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #dddddd; /* Linha de separação entre as linhas */
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3; /* Cor de fundo alternada para as linhas */
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1; /* Cor de fundo ao passar o mouse */
+}
+
+.btn-primary {
+    background-color: #009879; /* Cor do botão que combina com o cabeçalho */
+    border: none; /* Remove a borda do botão */
+    padding: 8px 16px; /* Padding do botão */
+    margin: 4px 2px; /* Margem ao redor do botão */
+    border-radius: 4px; /* Bordas arredondadas do botão */
+}
+
+.btn-primary:hover {
+    background-color: #007961; /* Cor do botão ao passar o mouse */
+}
+
 
         nav.menu-lateral:hover {
             width: 200px;
@@ -273,44 +332,59 @@ nav.menu-lateral {
             </li>
         </ul>
     </nav> 
-
-  <div class="container">
-    <div class="row justify-content-center mt-5">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Cadastro de Produto</div>
-                <div class="card-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="nome" class="form-label">Nome do Produto</label>
-                            <input type="text" class="form-control" id="nome" placeholder="Digite o nome do produto">
-                        </div>
-                        <div class="mb-3">
-                            <label for="preco" class="form-label">Preço</label>
-                            <input type="number" class="form-control" id="preco" placeholder="Digite o preço do produto">
-                        </div>
-                        <div class="mb-3">
-                            <label for="fornecedor" class="form-label">Fornecedor</label>
-                            <input type="text" class="form-control" id="fornecedor" placeholder="Digite o nome do fornecedor">
-                        </div>
-                        <div class="mb-3">
-                            <label for="data_validade" class="form-label">Data de Validade</label>
-                            <input type="date" class="form-control" id="data_validade">
-                        </div>
-                        <div class="mb-3">
-                            <label for="descricao" class="form-label">Descrição</label>
-                            <textarea class="form-control" id="descricao" rows="3" placeholder="Digite a descrição do produto"></textarea>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg w-100">Cadastrar</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="table">
+  <table class="table table-hover">
+    <thead class="table-light">
+      <tr>
+        <th scope="col">Código</th>
+        <th scope="col">Cliente</th>
+        <th scope="col">Valor</th>
+        <th scope="col" class="text-end">Visualizar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1234</td>
+        <td>Nagibe</td>
+        <td>R$ 100,00</td>
+        <td class="text-end">
+          <button type="button" class="btn btn-primary" aria-label="Visualizar compra de Nagibe">
+            <i class="bi bi-eye"></i> 
+          </button>
+        </td>
+      </tr>
+      <!-- Repita as linhas da tabela conforme necessário -->
+    </tbody>
+	
+	 <tbody>
+      <tr>
+        <td>4321</td>
+        <td>Jonathan</td>
+        <td>R$ 100,00</td>
+        <td class="text-end">
+          <button type="button" class="btn btn-primary" aria-label="Visualizar compra de Nagibe">
+            <i class="bi bi-eye"></i> 
+          </button>
+        </td>
+      </tr>
+      <!-- Repita as linhas da tabela conforme necessário -->
+    </tbody>
+	
+	 <tbody>
+      <tr>
+        <td>5678</td>
+        <td>Edivaldo</td>
+        <td>R$ 100,00</td>
+        <td class="text-end">
+          <button type="button" class="btn btn-primary" aria-label="Visualizar compra de Nagibe">
+            <i class="bi bi-eye"></i> 
+          </button>
+        </td>
+      </tr>
+      <!-- Repita as linhas da tabela conforme necessário -->
+    </tbody>
+  </table>
 </div>
-
 
 
     <!-- Bootstrap JS -->

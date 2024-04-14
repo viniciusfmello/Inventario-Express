@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Produto</title>
+    <title>Estoque</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+	
 
     <style>
         * {
@@ -96,8 +97,6 @@
             border-radius: 15px;
             margin-right: 7px;
         }
-
-        /*Barra Lateral*/
 
        
        html, body {
@@ -274,43 +273,27 @@ nav.menu-lateral {
         </ul>
     </nav> 
 
-  <div class="container">
-    <div class="row justify-content-center mt-5">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Cadastro de Produto</div>
-                <div class="card-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="nome" class="form-label">Nome do Produto</label>
-                            <input type="text" class="form-control" id="nome" placeholder="Digite o nome do produto">
-                        </div>
-                        <div class="mb-3">
-                            <label for="preco" class="form-label">Preço</label>
-                            <input type="number" class="form-control" id="preco" placeholder="Digite o preço do produto">
-                        </div>
-                        <div class="mb-3">
-                            <label for="fornecedor" class="form-label">Fornecedor</label>
-                            <input type="text" class="form-control" id="fornecedor" placeholder="Digite o nome do fornecedor">
-                        </div>
-                        <div class="mb-3">
-                            <label for="data_validade" class="form-label">Data de Validade</label>
-                            <input type="date" class="form-control" id="data_validade">
-                        </div>
-                        <div class="mb-3">
-                            <label for="descricao" class="form-label">Descrição</label>
-                            <textarea class="form-control" id="descricao" rows="3" placeholder="Digite a descrição do produto"></textarea>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg w-100">Cadastrar</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+<title>Produtos</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <div class="container mt-5">
+    <h2 class="text-white bg-dark p-2">Produtos:</h2>
+    <div class="card text-white bg-primary mb-3" style="max-width: 90rem;">
+      <div class="card-header">Categoria: </div>
+	  <div class="card-header"> Nome:</div>
+      <div class="card-body">
+        <h5 class="card-title">Preço:</h5>
+		 <h5 class="card-title">Estoque:</h5>
+        <p class="card-text">Status: </p>
+		<p class="card-text">Total de vendas:</p>
+		<p class="card-text">Valor total das vendas:</p>
+      </div>
     </div>
-</div>
-
+	
+    <!-- Repita o cartão para outros produtos -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 
     <!-- Bootstrap JS -->
