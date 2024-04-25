@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vendas</title>
+    <title>Visualizar Vendas</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -327,6 +327,11 @@ nav.menu-lateral {
             display: flex;
             width: 100%;
         }
+		
+				.card-img-top {
+    width: 100%;
+    height: auto;
+  }
     </style>
 </head>
 
@@ -352,98 +357,62 @@ nav.menu-lateral {
 
 
     <!-- Menu lateral -->
-    <nav class="menu-lateral">
-        <ul>
-            <li class="item-menu">
-                <a href="index.html">
-                    <span class="icon"><i class="bi bi-columns-gap"></i></span>
-                    <span class="text-link">Dashboard</span>
-                </a>
-            </li>
-            <li class="item-menu">
-                <a href="Vendas.html">
-                    <span class="icon"><i class="bi bi-bar-chart-line-fill"></i></span>
-                    <span class="text-link">Vendas</span>
-                </a>
-            </li>
-            <li class="item-menu">
-                <a href="Estoque.html">
-                    <span class="icon"><i class="bi bi-boxes"></i></span>
-                    <span class="text-link">Estoque</span>
-                </a>
-            </li>
-            <li class="item-menu">
-                <a href="Fornecedor.html">
-                    <span class="icon"><i class="bi bi-truck-flatbed"></i></span>
-                    <span class="text-link">Fornecedor</span>
-                </a>
-            </li>
-            <li class="item-menu">
-                <a href="cadastro.html">
-                    <span class="icon"><i class="bi bi-file-plus-fill"></i></span>
-                    <span class="text-link">Novo Produto</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-<div class="table">
-  <table class="table table-hover">
-    <thead class="table-light">
-      <tr>
-        <th scope="col">Código</th>
-        <th scope="col">Cliente</th>
-        <th scope="col">Valor</th>
-        <th scope="col" class="text-end">Visualizar</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1234</td>
-        <td>Nagibe</td>
-        <td>R$ 100,00</td>
-        <td class="text-end">
-         <button type="button" class="btn btn-primary" aria-label="Visualizar compra de Nagibe" onclick="window.location.href='VisualizarVendas1.html'">
-    <i class="bi bi-eye"></i>
-</button>
-        </td>
-      </tr>
-      <!-- Repita as linhas da tabela conforme necessário -->
-    </tbody>
-   
-     <tbody>
-      <tr>
-        <td>4321</td>
-        <td>Jonathan</td>
-        <td>R$ 100,00</td>
-        <td class="text-end">
-         <button type="button" class="btn btn-primary" aria-label="Visualizar compra de Jonathan" onclick="window.location.href='VisualizarVendas2.html'">
-    <i class="bi bi-eye"></i>
-</button>
-        </td>
-      </tr>
-      <!-- Repita as linhas da tabela conforme necessário -->
-    </tbody>
-   
-     <tbody>
-      <tr>
-        <td>5678</td>
-        <td>Edivaldo</td>
-        <td>R$ 100,00</td>
-        <td class="text-end">
-          <button type="button" class="btn btn-primary" aria-label="Visualizar compra de Edivaldo" onclick="window.location.href='VisualizarVendas3.html'">
-    <i class="bi bi-eye"></i>
-</button>
-        </td>
-      </tr>
-      <!-- Repita as linhas da tabela conforme necessário -->
-    </tbody>
-  </table>
+   <nav class="menu-lateral">
+    <ul>
+      <li class="item-menu">
+        <a href="index.html">
+          <span class="icon"><i class="bi bi-columns-gap"></i></span>
+          <span class="text-link">Dashboard</span>
+        </a>
+      </li>
+      <li class="item-menu">
+        <a href="vendas.html">
+          <span class="icon"><i class="bi bi-bar-chart-line-fill"></i></span>
+          <span class="text-link">Vendas</span>
+        </a>
+      </li>
+      <li class="item-menu">
+        <a href="Estoque.html">
+          <span class="icon"><i class="bi bi-boxes"></i></span>
+          <span class="text-link">Estoque</span>
+        </a>
+      </li>
+      <li class="item-menu">
+        <a href="Fornecedor.html">
+          <span class="icon"><i class="bi bi-truck-flatbed"></i></span>
+          <span class="text-link">Fornecedor</span>
+        </a>
+      </li>
+      <li class="item-menu">
+        <a href="cadastro.html">
+          <span class="icon"><i class="bi bi-file-plus-fill"></i></span>
+          <span class="text-link">Novo Produto</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+	
+<div class="container-fluid h-100">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="col-md-6">
+      <div class="card mb-3">
+        <img src="imagens/prod1.jpg" class="card-img-top" alt="Capa 1">
+        <div class="card-body">
+          <h5 class="card-title">Produto X</h5>
+          <p class="card-text">descrição.......</p>
+          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
 
 
-    <!-- Bootstrap JS -->
+	
+	
+	 <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
