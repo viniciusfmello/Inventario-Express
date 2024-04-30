@@ -1,0 +1,42 @@
+﻿@page
+@model WebApplication1.Pages.CadastroModel
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<link rel="stylesheet" href="~/css/Cadastrocss.css" asp-append-version="true" />
+
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Cadastro de Produto</div>
+                <div class="card-body">
+                    <form id="productForm">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome do Produto</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Digite o nome do produto">
+                        </div>
+                        <div class="mb-3">
+                            <label for="preco" class="form-label">Preço</label>
+                            <input type="number" class="form-control" id="preco" placeholder="Digite o preço do produto">
+                        </div>
+                        <div class="mb-3">
+                            <label for="fornecedor" class="form-label">Fornecedor</label>
+                            <input type="text" class="form-control" id="fornecedor" placeholder="Digite o nome do fornecedor">
+                        </div>
+                        <div class="mb-3">
+                            <label for="data_validade" class="form-label">Data de Validade</label>
+                            <input type="date" class="form-control" id="data_validade">
+                        </div>
+                        <div class="mb-3">
+                            <label for="descricao" class="form-label">Descrição</label>
+                            <textarea class="form-control" id="descricao" rows="3" placeholder="Digite a descrição do produto"></textarea>
+                        </div>
+                        <button id="btn-cadastro" type="submit" class="btn btn-primary">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
