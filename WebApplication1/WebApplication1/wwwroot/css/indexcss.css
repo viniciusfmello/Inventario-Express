@@ -1,0 +1,13 @@
+.mb-4 i {
+    font-size: 30px;
+}
+
+
+.card-1 {
+    padding-top: 80px;
+    align-items: center;
+}
+
+#cards-info, .card-body, .card-title, .card {
+    z-index: -1;
+}

@@ -1,0 +1,68 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Dashboard";
+   
+}
+
+<link rel="stylesheet" href="~/css/indexcss.css" asp-append-version="true" />
+
+<div class="container mt-4 card-1" id="cards-info">
+    <div class="row">
+
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Vendas</h5>
+                    <i class="bi bi-bar-chart-line-fill"></i>
+                    <p class="card-text">Total de vendas: 100</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card Produtos -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Produtos</h5>
+                    <i class="bi bi-boxes"></i>
+                    <p class="card-text">Total de produtos: 500</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Serviços atendidos</h5>
+                    <i class="bi bi-person-fill-check"></i>
+                    <p class="card-text">Total de serviços: 120</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Serviços pendentes</h5>
+                    <i class="bi bi-person-fill-exclamation"></i>
+                    <p class="card-text">Total de serviços: 1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Big Card -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Última Remessa</h5>
+                    <!-- grafico aqui-->
+                    <p class="card-text">Descrição da última remessa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
