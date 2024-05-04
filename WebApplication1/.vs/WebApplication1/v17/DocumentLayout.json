@@ -1,29 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\VisualCode\\3-semestre\\Inventario-Express\\asp-inventario\\WebApplication1\\",
+  "WorkspaceRootPath": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|c:\\visualcode\\3-semestre\\inventario-express\\asp-inventario\\webapplication1\\webapplication1\\pages\\estoque.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\estoque.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|h:\\trabalhoti3.0\\inventario-express\\webapplication1\\webapplication1\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|c:\\visualcode\\3-semestre\\inventario-express\\asp-inventario\\webapplication1\\webapplication1\\pages\\cadastro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\cadastro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|c:\\visualcode\\3-semestre\\inventario-express\\asp-inventario\\webapplication1\\webapplication1\\wwwroot\\css\\cadastrocss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|h:\\trabalhoti3.0\\inventario-express\\webapplication1\\webapplication1\\wwwroot\\css\\cadastrocss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\wwwroot\\css\\cadastrocss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|c:\\visualcode\\3-semestre\\inventario-express\\asp-inventario\\webapplication1\\webapplication1\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|h:\\trabalhoti3.0\\inventario-express\\webapplication1\\webapplication1\\pages\\loginuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\loginuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|h:\\trabalhoti3.0\\inventario-express\\webapplication1\\webapplication1\\pages\\estoque.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\estoque.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|h:\\trabalhoti3.0\\inventario-express\\webapplication1\\webapplication1\\pages\\cadastro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\cadastro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|h:\\trabalhoti3.0\\inventario-express\\webapplication1\\webapplication1\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|c:\\visualcode\\3-semestre\\inventario-express\\asp-inventario\\webapplication1\\webapplication1\\pages\\fornecedor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|h:\\trabalhoti3.0\\inventario-express\\webapplication1\\webapplication1\\pages\\fornecedor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\fornecedor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|c:\\visualcode\\3-semestre\\inventario-express\\asp-inventario\\webapplication1\\webapplication1\\wwwroot\\css\\fornecedorcss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|h:\\trabalhoti3.0\\inventario-express\\webapplication1\\webapplication1\\wwwroot\\css\\fornecedorcss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\wwwroot\\css\\fornecedorcss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
@@ -34,19 +42,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Database.cs",
+              "DocumentMoniker": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\WebApplication1\\Database.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Database.cs",
+              "ToolTip": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\WebApplication1\\Database.cs",
+              "RelativeToolTip": "WebApplication1\\Database.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T01:37:47.26Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Loginuser.cshtml",
+              "DocumentMoniker": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\WebApplication1\\Pages\\Loginuser.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Pages\\Loginuser.cshtml",
+              "ToolTip": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\WebApplication1\\Pages\\Loginuser.cshtml",
+              "RelativeToolTip": "WebApplication1\\Pages\\Loginuser.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-04T01:37:07.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Cadastrocss.css",
-              "DocumentMoniker": "C:\\VisualCode\\3-semestre\\Inventario-Express\\asp-inventario\\WebApplication1\\WebApplication1\\wwwroot\\css\\Cadastrocss.css",
+              "DocumentMoniker": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\WebApplication1\\wwwroot\\css\\Cadastrocss.css",
               "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\css\\Cadastrocss.css",
-              "ToolTip": "C:\\VisualCode\\3-semestre\\Inventario-Express\\asp-inventario\\WebApplication1\\WebApplication1\\wwwroot\\css\\Cadastrocss.css",
+              "ToolTip": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\WebApplication1\\wwwroot\\css\\Cadastrocss.css",
               "RelativeToolTip": "WebApplication1\\wwwroot\\css\\Cadastrocss.css",
               "ViewState": "AQIAADwAAAAAAAAAAAAAAEYAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -55,65 +93,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Cadastro.cshtml",
-              "DocumentMoniker": "C:\\VisualCode\\3-semestre\\Inventario-Express\\asp-inventario\\WebApplication1\\WebApplication1\\Pages\\Cadastro.cshtml",
+              "DocumentMoniker": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\WebApplication1\\Pages\\Cadastro.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Pages\\Cadastro.cshtml",
-              "ToolTip": "C:\\VisualCode\\3-semestre\\Inventario-Express\\asp-inventario\\WebApplication1\\WebApplication1\\Pages\\Cadastro.cshtml",
+              "ToolTip": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\WebApplication1\\Pages\\Cadastro.cshtml",
               "RelativeToolTip": "WebApplication1\\Pages\\Cadastro.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAgAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-27T02:17:05.98Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Estoque.cshtml",
-              "DocumentMoniker": "C:\\VisualCode\\3-semestre\\Inventario-Express\\asp-inventario\\WebApplication1\\WebApplication1\\Pages\\Estoque.cshtml",
+              "DocumentMoniker": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\WebApplication1\\Pages\\Estoque.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Pages\\Estoque.cshtml",
-              "ToolTip": "C:\\VisualCode\\3-semestre\\Inventario-Express\\asp-inventario\\WebApplication1\\WebApplication1\\Pages\\Estoque.cshtml",
+              "ToolTip": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\WebApplication1\\Pages\\Estoque.cshtml",
               "RelativeToolTip": "WebApplication1\\Pages\\Estoque.cshtml",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAAAEEAAAAKAAAA",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAAAEIAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-27T02:14:44.682Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\VisualCode\\3-semestre\\Inventario-Express\\asp-inventario\\WebApplication1\\WebApplication1\\Pages\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\WebApplication1\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\VisualCode\\3-semestre\\Inventario-Express\\asp-inventario\\WebApplication1\\WebApplication1\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\WebApplication1\\Pages\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "WebApplication1\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAAAFwAAAAqAAAA",
+              "ViewState": "AQIAAFQAAAAAAAAAAIBJwFwAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-27T02:12:55.828Z"
+              "WhenOpened": "2024-04-27T02:12:55.828Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Fornecedorcss.css",
-              "DocumentMoniker": "C:\\VisualCode\\3-semestre\\Inventario-Express\\asp-inventario\\WebApplication1\\WebApplication1\\wwwroot\\css\\Fornecedorcss.css",
+              "DocumentMoniker": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\WebApplication1\\wwwroot\\css\\Fornecedorcss.css",
               "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\css\\Fornecedorcss.css",
-              "ToolTip": "C:\\VisualCode\\3-semestre\\Inventario-Express\\asp-inventario\\WebApplication1\\WebApplication1\\wwwroot\\css\\Fornecedorcss.css",
+              "ToolTip": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\WebApplication1\\wwwroot\\css\\Fornecedorcss.css",
               "RelativeToolTip": "WebApplication1\\wwwroot\\css\\Fornecedorcss.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAFAAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-27T01:51:41.516Z"
+              "WhenOpened": "2024-04-27T01:51:41.516Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Fornecedor.cshtml",
-              "DocumentMoniker": "C:\\VisualCode\\3-semestre\\Inventario-Express\\asp-inventario\\WebApplication1\\WebApplication1\\Pages\\Fornecedor.cshtml",
+              "DocumentMoniker": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\WebApplication1\\Pages\\Fornecedor.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Pages\\Fornecedor.cshtml",
-              "ToolTip": "C:\\VisualCode\\3-semestre\\Inventario-Express\\asp-inventario\\WebApplication1\\WebApplication1\\Pages\\Fornecedor.cshtml",
+              "ToolTip": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\WebApplication1\\Pages\\Fornecedor.cshtml",
               "RelativeToolTip": "WebApplication1\\Pages\\Fornecedor.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-27T01:50:28.439Z"
+              "WhenOpened": "2024-04-27T01:50:28.439Z",
+              "EditorCaption": ""
             }
           ]
         }
