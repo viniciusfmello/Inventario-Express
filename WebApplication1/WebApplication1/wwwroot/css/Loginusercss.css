@@ -1,0 +1,40 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    background-image: linear-gradient(1000deg, black, rgb(3, 4, 59));
+}
+
+.tela-de-login {
+    /* background-color: rgb(0, 0, 0, 0,8); */
+    background-color: azure;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 20px;
+}
+
+.input-login {
+    padding: 15px;
+    border: solid black 1px;
+    outline: none;
+}
+
+#btn-login {
+    background-color: rgb(255, 128, 0);
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+}
+
+    #btn-login:hover {
+        background-color: rgb(133, 66, 0);
+        transition: 0.7s;
+        cursor: pointer;
+    }

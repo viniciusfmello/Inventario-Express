@@ -9,55 +9,55 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebApplication1
 build_property.RootNamespace = WebApplication1
-build_property.ProjectDir = C:\Users\vinic\Documents\Trabalho-Ti\Inventario-Express\WebApplication1\WebApplication1\
+build_property.ProjectDir = C:\Users\vinic\Desktop\Nova pasta\Inventario-Express\WebApplication1\WebApplication1\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\vinic\Documents\Trabalho-Ti\Inventario-Express\WebApplication1\WebApplication1
+build_property.MSBuildProjectDirectory = C:\Users\vinic\Desktop\Nova pasta\Inventario-Express\WebApplication1\WebApplication1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/vinic/Documents/Trabalho-Ti/Inventario-Express/WebApplication1/WebApplication1/Pages/Cadastro.cshtml]
+[C:/Users/vinic/Desktop/Nova pasta/Inventario-Express/WebApplication1/WebApplication1/Pages/Cadastro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FkYXN0cm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vinic/Documents/Trabalho-Ti/Inventario-Express/WebApplication1/WebApplication1/Pages/Error.cshtml]
+[C:/Users/vinic/Desktop/Nova pasta/Inventario-Express/WebApplication1/WebApplication1/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vinic/Documents/Trabalho-Ti/Inventario-Express/WebApplication1/WebApplication1/Pages/Estoque.cshtml]
+[C:/Users/vinic/Desktop/Nova pasta/Inventario-Express/WebApplication1/WebApplication1/Pages/Estoque.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0b3F1ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vinic/Documents/Trabalho-Ti/Inventario-Express/WebApplication1/WebApplication1/Pages/Fornecedor.cshtml]
+[C:/Users/vinic/Desktop/Nova pasta/Inventario-Express/WebApplication1/WebApplication1/Pages/Fornecedor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybmVjZWRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vinic/Documents/Trabalho-Ti/Inventario-Express/WebApplication1/WebApplication1/Pages/Index.cshtml]
+[C:/Users/vinic/Desktop/Nova pasta/Inventario-Express/WebApplication1/WebApplication1/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vinic/Documents/Trabalho-Ti/Inventario-Express/WebApplication1/WebApplication1/Pages/Privacy.cshtml]
+[C:/Users/vinic/Desktop/Nova pasta/Inventario-Express/WebApplication1/WebApplication1/Pages/Loginuser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW51c2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vinic/Desktop/Nova pasta/Inventario-Express/WebApplication1/WebApplication1/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vinic/Documents/Trabalho-Ti/Inventario-Express/WebApplication1/WebApplication1/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/vinic/Desktop/Nova pasta/Inventario-Express/WebApplication1/WebApplication1/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vinic/Documents/Trabalho-Ti/Inventario-Express/WebApplication1/WebApplication1/Pages/Vendas.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVuZGFzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/vinic/Documents/Trabalho-Ti/Inventario-Express/WebApplication1/WebApplication1/Pages/_ViewImports.cshtml]
+[C:/Users/vinic/Desktop/Nova pasta/Inventario-Express/WebApplication1/WebApplication1/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vinic/Documents/Trabalho-Ti/Inventario-Express/WebApplication1/WebApplication1/Pages/_ViewStart.cshtml]
+[C:/Users/vinic/Desktop/Nova pasta/Inventario-Express/WebApplication1/WebApplication1/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vinic/Documents/Trabalho-Ti/Inventario-Express/WebApplication1/WebApplication1/Pages/Shared/_Layout.cshtml]
+[C:/Users/vinic/Desktop/Nova pasta/Inventario-Express/WebApplication1/WebApplication1/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-g6ltozs93r

@@ -1,0 +1,17 @@
+﻿@page
+@model WebApplication1.Pages.Login_userModel
+@{
+    ViewData["Login"] = "Login";
+}
+
+<link rel="stylesheet" href="~/css/Loginusercss.css" asp-append-version="true" />
+
+
+<div class="tela-de-login">
+    <h1>Login</h1>
+    <input type="text" placeholder="Usuário" class="input-login">
+    <br><br>
+    <input type="password" placeholder="Senha" class="input-login">
+    <br><br>
+    <button id="btn-login">Enviar</button>
+</div>
