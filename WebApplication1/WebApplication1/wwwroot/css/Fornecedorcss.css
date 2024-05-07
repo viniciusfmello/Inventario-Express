@@ -1,18 +1,14 @@
-﻿
-.container-principal {
+﻿.container-principal {
     height: 100%;
-    /* Outros estilos necessários */
 }
-
 
 .form {
     max-width: 600px;
-    margin: 50px auto;
+    margin: 0 auto; 
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
 }
-
 
 .form-header {
     display: flex;
@@ -21,37 +17,22 @@
     margin-bottom: 20px;
 }
 
-
 .title h1 {
     font-size: 24px;
     margin: 0;
 }
 
-
-.input-group {
-    margin-bottom: 20px;
-}
-
-
+.input-group,
 .input-box {
     margin-bottom: 20px;
 }
-
 
     .input-box label {
         font-size: 18px;
         margin-bottom: 5px;
     }
 
-
-    .input-box input {
-        width: 100%;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-    }
-
-
+    .input-box input,
     .input-box textarea {
         width: 100%;
         padding: 10px;
@@ -59,32 +40,30 @@
         border: 1px solid #ccc;
     }
 
-
 .btn-primary {
-    background-color: rgb(255, 128, 0);
+    background-color: #000; / preto /
     border: none;
+    color: white; / garante que o texto seja branco /
+    width: 100%; / completo preenchimento no rodapé do card /
 }
-
 
     .btn-primary:hover {
-        background-color: rgb(170, 85, 1);
+        background-color: #555; / um cinza escuro para hover /
     }
 
-
-.form {
-    margin: 100px 250px;
-    display: flex;
-    width: 100%;
-}
-
-
-.card-custom {
+.card-custom,
+.card {
     background-color: #fff;
     border: 1px solid #000;
+    text-align: center; / centraliza todo o texto no card /
+}
+
+.row {
+    align-items: center; / centraliza verticalmente se necessário */
 }
 
 
-.card-title {
-    text-align: center; /* Centraliza o título */
+.container {
+    z-index: 1;
+    padding-top: 30px;
 }
-

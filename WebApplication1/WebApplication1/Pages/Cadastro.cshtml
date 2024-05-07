@@ -12,26 +12,26 @@
             <div class="card">
                 <div class="card-header">Cadastro de Produto</div>
                 <div class="card-body">
-                    <form id="productForm">
+                    <form id="productForm" method="post">
                         <div class="mb-3">
                             <label for="nome" class="form-label">Nome do Produto</label>
-                            <input type="text" class="form-control" id="nome" placeholder="Digite o nome do produto">
+                            <input asp-for="@Model.Nome" type="text" class="form-control" id="nome" placeholder="Digite o nome do produto">
                         </div>
                         <div class="mb-3">
                             <label for="preco" class="form-label">Preço</label>
-                            <input type="number" class="form-control" id="preco" placeholder="Digite o preço do produto">
+                            <input asp-for="@Model.Preco" type="number" step="0.01" class="form-control" id="preco" placeholder="Digite o preço do produto">
                         </div>
                         <div class="mb-3">
                             <label for="fornecedor" class="form-label">Fornecedor</label>
-                            <input type="text" class="form-control" id="fornecedor" placeholder="Digite o nome do fornecedor">
+                            <input asp-for="@Model.Fornecedor" type="text" class="form-control" id="fornecedor" placeholder="Digite o nome do fornecedor">
                         </div>
                         <div class="mb-3">
                             <label for="data_validade" class="form-label">Data de Validade</label>
-                            <input type="date" class="form-control" id="data_validade">
+                            <input asp-for="@Model.Data" type="date" class="form-control" id="data_validade">
                         </div>
                         <div class="mb-3">
                             <label for="descricao" class="form-label">Descrição</label>
-                            <textarea class="form-control" id="descricao" rows="3" placeholder="Digite a descrição do produto"></textarea>
+                            <textarea asp-for="@Model.Descricao" class="form-control" id="descricao" rows="3" placeholder="Digite a descrição do produto"></textarea>
                         </div>
                         <button id="btn-cadastro" type="submit" class="btn btn-primary">Cadastrar</button>
                     </form>

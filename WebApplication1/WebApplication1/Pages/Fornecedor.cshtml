@@ -4,83 +4,28 @@
     ViewData["Title"] = "Fornecedor";
 }
 
-<link rel="stylesheet" href="~/css/Fornecedorcss.css" asp-append-version="true" />
-
 <title>Chaves Prod</title>
+<link rel="stylesheet" href="~/css/Fornecedorcss.css" asp-append-version="true" />
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 
-
-<div class="container py-5 mt-3">
-    <div class="row">
-        <!-- Cartão à Esquerda -->
-        <div class="col-md-4 mb-4">
-            <div class="card h-100 border-dark">
-                <div class="card-body text-black">
-                    <h5 class="card-title">Chaves Prod</h5>
-                    <p class="card-text">Descrição dos produtos e tipos de serviços que ele entrega.</p>
-                </div>
-                <div class="card-footer bg-dark d-flex justify-content-between">
-                    <a href="InfoProduto.html" class="btn btn-light btn-block">Informações</a>
-                </div>
-            </div>
-        </div>
-        <!-- Cartão Centralizado -->
-        <div class="col-md-4 mb-4 d-flex justify-content-center">
-            <div class="card h-100 border-dark">
-                <div class="card-body text-black">
-                    <h5 class="card-title">Chaves Prod</h5>
-                    <p class="card-text">Descrição dos produtos e tipos de serviços que ele entrega.</p>
-                </div>
-                <div class="card-footer bg-dark d-flex justify-content-between">
-                    <a href="#" class="btn btn-light btn-block">Informações</a>
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <!-- Card genérico repetido 6 vezes -->
+        @for (int i = 0; i < 6; i++)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-dark">
+                    <div class="card-body text-black">
+                        <h5 class="card-title">Chaves Prod</h5>
+                        <p class="card-text">Descrição dos produtos e tipos de serviços que ele entrega.</p>
+                    </div>
+                    <div class="card-footer bg-dark">
+                        <form action="InfoProduto">
+                            <button type="submit" class="btn btn-primary" aria-label="Visualizar compra de Nagibe">Visualizar Produto</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Cartão à Direita -->
-        <div class="col-md-4 mb-4 d-flex justify-content-end">
-            <div class="card h-100 border-dark">
-                <div class="card-body text-black">
-                    <h5 class="card-title">Chaves Prod</h5>
-                    <p class="card-text">Descrição dos produtos e tipos de serviços que ele entrega.</p>
-                </div>
-                <div class="card-footer bg-dark d-flex justify-content-between">
-                    <a href="#" class="btn btn-light btn-block">Informações</a>
-                </div>
-            </div>
-        </div>
-        <!-- Cartão à Esquerda -->
-        <div class="col-md-4 mb-4">
-            <div class="card h-100 border-dark">
-                <div class="card-body text-black">
-                    <h5 class="card-title">Chaves Prod</h5>
-                    <p class="card-text">Descrição dos produtos e tipos de serviços que ele entrega.</p>
-                </div>
-                <div class="card-footer bg-dark d-flex justify-content-between">
-                    <a href="#" class="btn btn-light btn-block">Informações</a>
-                </div>
-            </div>
-        </div>
-        <!-- Cartão Centralizado -->
-        <div class="col-md-4 mb-4 d-flex justify-content-center mx-auto">
-            <div class="card h-100 border-dark">
-                <div class="card-body text-black">
-                    <h5 class="card-title">Chaves Prod</h5>
-                    <p class="card-text">Descrição dos produtos e tipos de serviços que ele entrega.</p>
-                </div>
-                <div class="card-footer bg-dark d-flex justify-content-between">
-                    <a href="#" class="btn btn-light btn-block">Informações</a>
-                </div>
-            </div>
-        </div>
-        <!-- Cartão à Direita -->
-        <div class="col-md-4 mb-4 d-flex justify-content-end mx-auto">
-            <div class="card h-100">
-                <div class="card-body text-black">
-                    <h5 class="card-title">Chaves Prod</h5>
-                    <p class="card-text">Descrição dos produtos e tipos de serviços que ele entrega.</p>
-                </div>
-                <div class="card-footer bg-dark d-flex justify-content-between">
-                    <a href="#" class="btn btn-light btn-block">Informações</a>
-                </div>
-            </div>
-        </div>
+        }
+    </div>
+</div>

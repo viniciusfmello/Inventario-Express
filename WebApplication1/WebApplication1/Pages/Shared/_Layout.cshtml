@@ -45,11 +45,10 @@
                 <nav>
                     <ul>
                         <li><a href="index.html"> Dashboard</a></li>
-                        <li><a href="vendas.html">Vendas</a></li>
                         <li><a href="Estoque.html">Estoque</a></li>
                         <li><a href="Fornecedor.html">Fornecedor</a></li>
                         <li><a href="cadastro.html">Novo Produto</a></li>
-                        <li><a href="#">Sair</a></li>
+                        <li><a asp-page="/Loginuser" asp-area="">Sair</a></li>
                     </ul>
                 </nav>
             </div>
@@ -72,12 +71,6 @@
                     </a>
                 </li>
                 <li class="item-menu">
-                    <a asp-page="/Vendas" asp-area="">
-                        <span class="icon"><i class="bi bi-bar-chart-line-fill"></i></span>
-                        <span class="text-link">Vendas</span>
-                    </a>
-                </li>
-                <li class="item-menu">
                     <a asp-page="/Estoque" asp-area="">
                         <span class="icon"><i class="bi bi-boxes"></i></span>
                         <span class="text-link">Estoque</span>
@@ -95,8 +88,8 @@
                         <span class="text-link">Novo Produto</span>
                     </a>
                 </li>
-                <li class="item-menu">
-                    <a href="#">
+                <li class="item-menu">  
+                    <a asp-page="/Loginuser" asp-area="">
                         <span class="icon"><i class="bi bi-person-circle"></i></span>
                         <span class="text-link">Sair</span>
                     </a>
