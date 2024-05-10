@@ -1885,23 +1885,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Yago Henrique\\.nuget\\packages\\": {},
+    "C:\\Users\\joaoa\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
-      "packagesPath": "C:\\Users\\Yago Henrique\\.nuget\\packages\\",
-      "outputPath": "H:\\trabalhoti3.0\\Inventario-Express\\WebApplication1\\WebApplication1\\obj\\",
+      "projectPath": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "packagesPath": "C:\\Users\\joaoa\\.nuget\\packages\\",
+      "outputPath": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Yago Henrique\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\joaoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1910,6 +1910,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

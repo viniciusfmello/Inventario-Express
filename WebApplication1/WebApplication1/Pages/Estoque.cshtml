@@ -4,63 +4,59 @@
     ViewData["Title"] = "Estoque";
 }
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="" href="~/js/Estoquejs.js" asp-append-version="true" />
 <link rel="stylesheet" href="~/css/Estoquecss.css" asp-append-version="true" />
 
-<div class="container mt-4 card-1">
-    <div class="row">
 
-        <div class="col-md-6 mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Vendas</h5>
-                    <i class="bi bi-bar-chart-line-fill"></i>
-                    <p class="card-text">Total de vendas: 100</p>
-                </div>
+<div class="table">
+    <table class="table table-hover">
+        <thead class="table-light">
+            <tr>
+                <th scope="col">Produto</th>
+                <th scope="col">Quantidade em Estoque</th>
+                <th scope="col">Fornecedor</th>
+                <th scope="col" class="text-end">Remover do Estoque</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Produto 1</td>
+                <td>50</td>
+                <td>Fornecedor A</td>
+                <td class="text-end">
+                    <a asp-page="/ExcluirProduto" asp-area="" class="btn btn-danger" aria-label="Remover Produto 1 do Estoque">
+                        <i class="bi bi-trash"></i>
+                    </a>
+                </td>
+            </tr>
+            <!-- Adicione mais linhas conforme necessário para cada produto -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Modal para remover do estoque -->
+<div class="modal" id="removeStockModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Remover do Estoque</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
-        </div>
-        <!-- Card Produtos -->
-        <div class="col-md-6 mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Estoque</h5>
-                    <i class="bi bi-boxes"></i>
-                    <p class="card-text">Total de produtos: @Model.totalProdutos</p>
-                </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <p>Digite a quantidade que deseja remover do estoque:</p>
+                <input type="number" id="quantityToRemove" class="form-control" min="0">
             </div>
-        </div>
 
-        <div class="col-md-6 mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Preço:</h5>
-                    <i class="bi bi-currency-dollar"></i>
-                    <p class="card-text">Preço do produtos: R$ @Model.totalPreco</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 mb-4">
-
-
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Status:</h5>
-                    <i class="bi bi-clock-fill"></i>
-                    <p class="card-text">Total de serviços: 1</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Big Card -->
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Categoria:</h5>
-                    <!-- grafico aqui-->
-                    <p class="card-text">Descrição dos produtos:</p>
-                </div>
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger" onclick="removeFromStock()">Remover</button>
             </div>
         </div>
     </div>

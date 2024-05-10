@@ -81,3 +81,7 @@
 .container{
     padding-top: 30px;
 }
+
+.col-md-8{
+    z-index:0;
+}

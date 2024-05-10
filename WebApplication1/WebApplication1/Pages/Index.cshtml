@@ -1,24 +1,21 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Dashboard";
-   
+    ViewData["Title"] = "Dashboard";  
 }
 
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
 <link rel="stylesheet" href="~/css/indexcss.css" asp-append-version="true" />
+<link rel="" href="~/js/indexjs.js" asp-append-version="true" />
+
 
 <div class="container mt-4 card-1" id="cards-info">
     <div class="row">
 
-        <div class="col-md-6 mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Vendas</h5>
-                    <i class="bi bi-bar-chart-line-fill"></i>
-                    <p class="card-text">Total de vendas: 100</p>
-                </div>
-            </div>
-        </div>
+        
         <!-- Card Produtos -->
         <div class="col-md-6 mb-4">
             <div class="card">
@@ -33,36 +30,146 @@
         <div class="col-md-6 mb-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Serviços atendidos</h5>
-                    <i class="bi bi-person-fill-check"></i>
-                    <p class="card-text">Total de serviços: 120</p>
+                    <h5 class="card-title">Produtos Recomendados</h5>
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <p class="card-text">Product escription here</p>
+
                 </div>
             </div>
         </div>
-        <div class="col-md-6 mb-4">
 
-
+        <div class="col-12 mb-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Serviços pendentes</h5>
-                    <i class="bi bi-person-fill-exclamation"></i>
-                    <p class="card-text">Total de serviços: 1</p>
+                    <div class="row">
+                        <!-- Coluna do Gráfico -->
+                        <div class="col-md-8">
+                            <div id="chartdiv"></div>
+                        </div>
+                        
+                        <!-- Coluna da Descrição -->
+                        <div class="col-md-4">
+                            <h5 class="card-title">Análise de Vendas</h5>
+                            <p class="card-text">
+                                Este gráfico representa a tendência de vendas ao longo do ano, permitindo uma visualização clara do desempenho mensal. Use estas informações para planejar melhor suas estratégias de estoque.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        
+       
     </div>
 
 
-    <!-- Big Card -->
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Última Remessa</h5>
-                    <!-- grafico aqui-->
-                    <p class="card-text">Descrição da última remessa.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 </div>
+
+
+
+<script>
+
+    am5.ready(function () {
+
+    // Create root and chart
+    var root = am5.Root.new("chartdiv");
+
+    root.setThemes([
+        am5themes_Animated.new(root)
+    ]);
+
+    var chart = root.container.children.push(
+        am5percent.PieChart.new(root, {
+            layout: root.verticalLayout
+        })
+    );
+
+    // Create series
+    var series = chart.series.push(
+        am5percent.PieSeries.new(root, {
+            valueField: "percent",
+            categoryField: "type",
+            fillField: "color",
+            alignLabels: false
+        })
+    );
+
+    series.slices.template.set("templateField", "sliceSettings");
+    series.labels.template.set("radius", 30);
+
+    // Set up click events
+    series.slices.template.events.on("click", function (event) {
+        console.log(event.target.dataItem.dataContext)
+        if (event.target.dataItem.dataContext.id != undefined) {
+            selected = event.target.dataItem.dataContext.id;
+        } else {
+            selected = undefined;
+        }
+        series.data.setAll(generateChartData());
+    });
+
+    // Define data
+    var selected;
+    var types = [{
+        type: "Fossil Energy",
+        percent: 70,
+        color: series.get("colors").getIndex(0),
+        subs: [{
+            type: "Oil",
+            percent: 15
+        }, {
+            type: "Coal",
+            percent: 35
+        }, {
+            type: "Nuclear",
+            percent: 20
+        }]
+    }, {
+        type: "Green Energy",
+        percent: 30,
+        color: series.get("colors").getIndex(1),
+        subs: [{
+            type: "Hydro",
+            percent: 15
+        }, {
+            type: "Wind",
+            percent: 10
+        }, {
+            type: "Other",
+            percent: 5
+        }]
+    }];
+    series.data.setAll(generateChartData());
+
+
+    function generateChartData() {
+        var chartData = [];
+        for (var i = 0; i < types.length; i++) {
+            if (i == selected) {
+                for (var x = 0; x < types[i].subs.length; x++) {
+                    chartData.push({
+                        type: types[i].subs[x].type,
+                        percent: types[i].subs[x].percent,
+                        color: types[i].color,
+                        pulled: true,
+                        sliceSettings: {
+                            active: true
+                        }
+                    });
+                }
+            } else {
+                chartData.push({
+                    type: types[i].type,
+                    percent: types[i].percent,
+                    color: types[i].color,
+                    id: i
+                });
+            }
+        }
+        return chartData;
+    }
+
+});
+
+</script>

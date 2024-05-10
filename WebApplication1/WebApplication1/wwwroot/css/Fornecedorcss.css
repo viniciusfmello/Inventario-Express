@@ -1,4 +1,5 @@
-﻿.container-principal {
+﻿
+.container-principal {
     height: 100%;
 }
 
@@ -63,7 +64,8 @@
 }
 
 
-.container {
-    z-index: 1;
-    padding-top: 30px;
+.container{
+    margin-top: 30px;
+    z-index: 0;
 }
+

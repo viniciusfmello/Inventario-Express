@@ -11,3 +11,9 @@
 #cards-info, .card-body, .card-title, .card {
     z-index: -1;
 }
+
+
+#chartdiv {
+    width: 100%;
+    height: 500px;
+}
