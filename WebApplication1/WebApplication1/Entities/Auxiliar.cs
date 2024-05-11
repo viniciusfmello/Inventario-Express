@@ -75,5 +75,37 @@ namespace WebApplication1.Entities
             return id;
 
         }
+
+        public static bool isValidLogin(string usuario, string senhaInformada)
+        {
+            Database bancoDeDados = new Database();
+            SqlDataReader leitor;
+            string senhaBanco;
+            string query = $"SELECT senha FROM tb_usuario WHERE usuario_login='{usuario}'";
+            
+            bancoDeDados.abrirConexao();
+
+            leitor = bancoDeDados.executarQuery(query);
+
+            if (!leitor.HasRows)
+            {
+                bancoDeDados.fechar();
+                return false;
+            }
+
+            leitor.Read();
+            senhaBanco = leitor.GetString(0);
+
+            if (!senhaBanco.Equals(senhaInformada))
+            {
+                bancoDeDados.fechar();
+                return false;
+            }
+
+            bancoDeDados.fechar();
+            return true;
+
+        }
+
     }
 }

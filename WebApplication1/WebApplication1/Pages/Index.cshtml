@@ -2,6 +2,9 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Dashboard";  
+
+
+
 }
 
 <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
@@ -12,17 +15,16 @@
 <link rel="" href="~/js/indexjs.js" asp-append-version="true" />
 
 
+
 <div class="container mt-4 card-1" id="cards-info">
     <div class="row">
-
-        
         <!-- Card Produtos -->
         <div class="col-md-6 mb-4">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Produtos</h5>
                     <i class="bi bi-boxes"></i>
-                    <p class="card-text">Total de produtos: 500</p>
+                    <p class="card-text">Total de produtos: @Model.totalProdutos</p>
                 </div>
             </div>
         </div>
@@ -30,9 +32,9 @@
         <div class="col-md-6 mb-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Produtos Recomendados</h5>
-                    <i class="bi bi-hand-thumbs-up-fill"></i>
-                    <p class="card-text">Product escription here</p>
+                    <h5 class="card-title">Preço total estoque</h5>
+                    <i class="bi bi-currency-dollar"></i>
+                    <p class="card-text">Preço total: R$ @Model.totalPreco</p>
 
                 </div>
             </div>

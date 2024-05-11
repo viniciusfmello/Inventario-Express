@@ -9,17 +9,9 @@ namespace WebApplication1.Pages
     public class EstoqueModel : PageModel
 
     {
-        [BindProperty]
-        public int totalProdutos { get; set; }
-        [BindProperty]
-        public double totalPreco { get; set; }
         public void OnGet()
         {
-            Database bancoDeDados = new Database();
-            SqlDataReader leitor;
 
-            totalProdutos = Auxiliar.GetAtualId("tb_produto");
-            totalPreco = Auxiliar.GetPrecoTotal("tb_produto");
         }
     }
 }

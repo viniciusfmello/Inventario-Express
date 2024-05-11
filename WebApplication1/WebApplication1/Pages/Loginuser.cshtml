@@ -9,9 +9,15 @@
 
 <div class="tela-de-login">
     <h1>Login</h1>
-    <input type="text" placeholder="Usuário" class="input-login">
-    <br><br>
-    <input type="password" placeholder="Senha" class="input-login">
-    <br><br>
-    <button id="btn-login">Enviar</button>
+    <form method="post">
+        <input asp-for="@Model.Usuario" type="text" placeholder="Usuário" class="input-login">
+        <br><br>
+        <input asp-for="@Model.Senha" type="password" placeholder="Senha" class="input-login">
+        <br><br>
+        @if (Model.mensagemErro != "")
+        {
+            <p>@Model.mensagemErro</p>
+        }
+        <button id="btn-login">Enviar</button>
+    </form>
 </div>
