@@ -10,6 +10,7 @@ namespace WebApplication1.Pages
     public class LoginuserModel : PageModel
     {
         public static bool isUsuarioLogado=false;
+        public static string  NomeAtual = null;
 
         [BindProperty]
         public string Usuario { get; set; }
@@ -27,6 +28,7 @@ namespace WebApplication1.Pages
             {
                 isUsuarioLogado = true;
                 mensagemErro= "";
+                NomeAtual = Usuario; 
                 return RedirectToPage("/Index");
             }
             else

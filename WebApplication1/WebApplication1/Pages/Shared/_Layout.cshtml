@@ -18,8 +18,12 @@
 
 
             <div class="info-usuario">
-                <img src="https://source.unsplash.com/random" alt="foto-de-perfil" id="logo">
-                <p>Nome</p>
+                @if (LoginuserModel.isUsuarioLogado)
+                {
+                    <img src="https://source.unsplash.com/random" alt="foto-de-perfil" id="logo">
+                    <p>@LoginuserModel.NomeAtual</p>
+                }
+                
             </div>
 
 
@@ -28,10 +32,13 @@
                 <span id="titulo-empresa">Inventário Express</span>
             </div>
 
-            <div class="btn">   
-            <button class="btn-header">
-                    <a asp-page="/logout" asp-area="">Sair</a>
-            </button>
+            <div class="btn">
+                @if (LoginuserModel.isUsuarioLogado)
+                {
+                    <button class="btn-header">
+                        <a asp-page="/logout" asp-area="">Sair</a>
+                    </button>
+                }
             </div>
 
             <!--mobile -->
@@ -50,7 +57,15 @@
                         <li><a asp-page="/Estoque" asp-area="">Estoque</a></li>
                         <li><a href="Fornecedor.html">Fornecedor</a></li>
                         <li><a href="cadastro.html">Novo Produto</a></li>
-                        <li><a asp-page="/logout" asp-area="">Sair</a></li>
+                        @if (LoginuserModel.isUsuarioLogado)
+                        {
+                            <li><a asp-page="/logout" asp-area="">Sair</a></li>
+                        }
+                        else
+                        {
+                            <li><a asp-page="/Loginuser" asp-area="">Login</a></li>
+                        }
+            
                     </ul>
                 </nav>
             </div>
@@ -90,11 +105,22 @@
                         <span class="text-link">Novo Produto</span>
                     </a>
                 </li>
-                <li class="item-menu">  
-                    <a asp-page="/Loginuser" asp-area="">
-                        <span class="icon"><i class="bi bi-person-circle"></i></span>
-                        <span class="text-link">Sair</span>
-                    </a>
+                <li class="item-menu">
+                    @if (LoginuserModel.isUsuarioLogado)
+                    {
+                        <a asp-page="/logout" asp-area="">
+                            <span class="icon"><i class="bi bi-person-circle"></i></span>
+                            <span class="text-link">Sair</span>
+                        </a>
+                    }
+                    else
+                    {
+                        <a asp-page="/Loginuser" asp-area="">
+                            <span class="icon"><i class="bi bi-person-circle"></i></span>
+                            <span class="text-link">Login</span>
+                        </a>
+                    }
+
                 </li>
             </ul>
         </nav>

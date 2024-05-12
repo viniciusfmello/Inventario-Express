@@ -7,6 +7,7 @@ namespace WebApplication1.Pages
     {
         public IActionResult OnGet()
         {
+            LoginuserModel.NomeAtual = null;
             LoginuserModel.isUsuarioLogado = false;
             return RedirectToPage("/Loginuser");
         }

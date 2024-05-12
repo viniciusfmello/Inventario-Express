@@ -21,6 +21,16 @@ namespace WebApplication1.Entities
             Fornecedor = fornecedor;
             Id = Auxiliar.GetProxId("tb_produto");
         }
-        
+
+        public Produto(string nome, string data, string descricao, string preco, string fornecedor, int ID)
+        {
+            Nome = nome;
+            Data = data;
+            Descricao = descricao;
+            Preco = preco;
+            Fornecedor = fornecedor;
+            Id = ID;
+        }
+
     }
 }

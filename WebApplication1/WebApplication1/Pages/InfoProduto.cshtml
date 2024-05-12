@@ -11,12 +11,15 @@
     <div class="row">
 
 
-
+        
         <div class="col-md-6 mb-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Chaves Produ</h5>
-                    <p class="card-text">Chave do produto</p>
+                    <h5 class="card-title">Nome dos produtos</h5>
+                    @for (int i = 0; i < Model.ListaDeProdutosFornecedor.Count; i++)
+                    {
+                        <p class="card-text"><strong>@Model.ListaDeProdutosFornecedor[i].Nome</strong></p>
+                    }
                 </div>
             </div>
         </div>
@@ -25,8 +28,11 @@
 
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">tipos de serviços</h5>
-                    <p class="card-text">Produtos:</p>
+                    <h5 class="card-title">Data de validade</h5>
+                    @for (int i = 0; i < Model.ListaDeProdutosFornecedor.Count; i++)
+                    {
+                        <p class="card-text"><strong>@Model.ListaDeProdutosFornecedor[i].Data</strong></p>
+                    }
                 </div>
             </div>
         </div>
@@ -38,9 +44,11 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Última Remessa</h5>
-                    <!-- grafico aqui-->
-                    <p class="card-text">Descrição dos produtos</p>
+                    @for (int i = 0; i < Model.ListaDeProdutosFornecedor.Count; i++)
+                    {
+                        <h6>Descrição do produto <strong>@Model.ListaDeProdutosFornecedor[i].Nome:</strong></h6>
+                        <p class="card-text">@Model.ListaDeProdutosFornecedor[i].Descricao</p>
+                    }
                 </div>
             </div>
         </div>

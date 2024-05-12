@@ -23,9 +23,13 @@ namespace WebApplication1.Pages
         [BindProperty]
         public List<string> ListaFornecedores { get; set; }
 
-        public void OnGet()
+        public IActionResult OnGet()
         {
-
+            if (!LoginuserModel.isUsuarioLogado)
+            {
+                return RedirectToPage("/Loginuser");
+            }
+            return Page();
         }
         public IActionResult OnPost()
         {

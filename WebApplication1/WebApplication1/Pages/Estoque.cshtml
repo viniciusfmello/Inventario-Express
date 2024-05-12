@@ -16,22 +16,26 @@
         <thead class="table-light">
             <tr>
                 <th scope="col">Produto</th>
-                <th scope="col">Quantidade em Estoque</th>
+                <th scope="col">Preço</th>
                 <th scope="col">Fornecedor</th>
                 <th scope="col" class="text-end">Remover do Estoque</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Produto 1</td>
-                <td>50</td>
-                <td>Fornecedor A</td>
-                <td class="text-end">
-                    <a asp-page="/ExcluirProduto" asp-area="" class="btn btn-danger" aria-label="Remover Produto 1 do Estoque">
-                        <i class="bi bi-trash"></i>
-                    </a>
-                </td>
-            </tr>
+            @for (int i=0; i< Model.listaProdutos.Count; i++)
+            {
+                <tr>
+                    <td>@Model.listaProdutos[i].Nome</td>
+                    <td>R$ @Model.listaProdutos[i].Preco</td>
+                    <td>@Model.listaProdutos[i].Fornecedor</td>
+                    <td class="text-end">
+                        <a asp-page="/ExcluirProduto" asp-route-id="@Model.listaProdutos[i].Id" asp-area="" class="btn btn-danger" aria-label="Remover Produto do Estoque">
+                            <i class="bi bi-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+
             <!-- Adicione mais linhas conforme necessário para cada produto -->
         </tbody>
     </table>

@@ -9,8 +9,18 @@ namespace WebApplication1.Pages
     public class EstoqueModel : PageModel
 
     {
-        public void OnGet()
+        [BindProperty]
+        public List<Produto> listaProdutos { get; set; }
+        public IActionResult OnGet()
         {
+            if (!LoginuserModel.isUsuarioLogado)
+            {
+                return RedirectToPage("/Loginuser");
+            }
+            listaProdutos = Auxiliar.GetListaDeProdutos();
+            
+            
+            return Page();
 
         }
     }

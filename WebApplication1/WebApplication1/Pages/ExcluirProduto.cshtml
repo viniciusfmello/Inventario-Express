@@ -9,19 +9,21 @@
 
 <div class="container">
     <h2>Remover Produto</h2>
-    <form id="removerProdutosForm">
+    <form asp-page-handler="Remove" method="post">
         <label for="quantidade">Quantidade do produto a remover:</label>
         <div class="input-with-total">
-            <input type="number" id="quantidade" name="quantidade" min="1" required>
+            <input asp-for="@Model.Quantidade" type="number" id="quantidade" name="quantidade" min="1" required>
             <span id="total-remover">0/50</span> <!-- Elemento para mostrar o total -->
         </div>
         <div class="button-container">
-            <input type="submit" value="Remover">
-            <input type="button" value="Remover Tudo" onclick="removerTudo()">
-        </div>
-        <div class="button-container cancel-button-container">
-            <!-- Div adicionada para centralizar o botão cancelar -->
-            <input type="button" value="Cancelar" onclick="window.location.href='Estoque.html'">
+            <button id="btn-login">Remover</button>
         </div>
     </form>
+    <form asp-page-handler="Cancela" method="post">
+        <div class="button-container cancel-button-container">
+            <!-- Div adicionada para centralizar o botão cancelar -->
+            <button id="btn-login">Cancelar</button>
+        </div>
+    </form>
+
 </div>

@@ -10,19 +10,18 @@
 
 <div class="container py-5">
     <div class="row justify-content-center">
-        <!-- Card genérico repetido 6 vezes -->
-        @for (int i = 0; i < 6; i++)
+        @for (int i = 0; i < Model.listaFornecedor.Count; i++)
         {
             <div class="col-md-4 mb-4">
                 <div class="card h-100 border-dark">
                     <div class="card-body text-black">
-                        <h5 class="card-title">Chaves Prod</h5>
-                        <p class="card-text">Descrição dos produtos e tipos de serviços que ele entrega.</p>
+                        <h5 class="card-title">@Model.listaFornecedor[i].Nome</h5>
+                        <p class="card-text">@Model.listaFornecedor[i].Descricao</p>
                     </div>
                     <div class="card-footer bg-dark">
-                        <form action="InfoProduto">
-                            <button type="submit" class="btn btn-primary" aria-label="Visualizar compra de Nagibe">Visualizar Produto</button>
-                        </form>
+                        <a asp-page="/InfoProduto" asp-route-nome="@Model.listaFornecedor[i].Nome" asp-area="" class="btn btn-light" aria-label="Visualizar do Estoque">
+                            Visualizar Produto
+                        </a>
                     </div>
                 </div>
             </div>
