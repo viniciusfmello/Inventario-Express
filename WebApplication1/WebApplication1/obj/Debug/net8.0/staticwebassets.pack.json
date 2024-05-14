@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\css\\Fornecedorcss.css"
     },
     {
+      "Id": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\wwwroot\\css\\InfoProdutocss.css",
+      "PackagePath": "staticwebassets\\css\\InfoProdutocss.css"
+    },
+    {
       "Id": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\wwwroot\\css\\Layoutcss.css",
       "PackagePath": "staticwebassets\\css\\Layoutcss.css"
     },
