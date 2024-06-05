@@ -18,6 +18,10 @@
                             <input asp-for="@Model.Nome" type="text" class="form-control" id="nome" placeholder="Digite o nome do produto">
                         </div>
                         <div class="mb-3">
+                            <label for="quantidade" class="form-label">Quantidade</label>
+                            <input asp-for="@Model.Quantidade" type="number" class="form-control" id="quantidade" placeholder="Digite a quantidade de produto">
+                        </div>
+                        <div class="mb-3">
                             <label for="preco" class="form-label">Preço</label>
                             <input asp-for="@Model.Preco" type="number" step="0.01" class="form-control" id="preco" placeholder="Digite o preço do produto">
                         </div>

@@ -12,6 +12,10 @@ namespace WebApplication1.Pages
         [BindProperty]
         public string Nome { get; set; }
         [BindProperty]
+
+        public int Quantidade { get; set; }
+        [BindProperty]
+
         public string Data { get; set; }
         [BindProperty]
         public string Descricao { get; set; }
@@ -38,8 +42,8 @@ namespace WebApplication1.Pages
             
             Produto produto = new Produto(Nome,Data,Descricao,Preco,Fornecedor);
 
-            string query = $"insert into tb_produto (id, nome, data_validade, descricao, preco, nome_fornecedor) values " +
-                $"({produto.Id}, '{Nome}', '{Data}', '{Descricao}', '{Preco}', '{Fornecedor}')";
+            string query = $"insert into tb_produto (id, nome, Quantidade, data_validade, descricao, preco, nome_fornecedor) values " +
+                $"({produto.Id}, '{Nome}', '{Quantidade}', '{Data}', '{Descricao}', '{Preco}', '{Fornecedor}')";
 
             bancoDeDados.manipularDado(query);
 

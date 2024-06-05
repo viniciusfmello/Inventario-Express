@@ -2,13 +2,10 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Dashboard";  
-
-
-
 }
 
 <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
 <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
 
 <link rel="stylesheet" href="~/css/indexcss.css" asp-append-version="true" />
@@ -68,110 +65,133 @@
     
 </div>
 
-
-
 <script>
-
     am5.ready(function () {
 
-    // Create root and chart
-    var root = am5.Root.new("chartdiv");
+        // Create root element
+        var root = am5.Root.new("chartdiv");
 
-    root.setThemes([
-        am5themes_Animated.new(root)
-    ]);
+        // Set themes
+        root.setThemes([
+            am5themes_Animated.new(root)
+        ]);
 
-    var chart = root.container.children.push(
-        am5percent.PieChart.new(root, {
-            layout: root.verticalLayout
+        // Create chart
+        var chart = root.container.children.push(am5xy.XYChart.new(root, {
+            panX: true,
+            panY: true,
+            wheelX: "panX",
+            wheelY: "zoomX",
+            pinchZoomX: true,
+            paddingLeft: 0,
+            paddingRight: 1
+        }));
+
+        // Add cursor
+        var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
+        cursor.lineY.set("visible", false);
+
+
+        // Create axes
+        var xRenderer = am5xy.AxisRendererX.new(root, {
+            minGridDistance: 30,
+            minorGridEnabled: true
+        });
+
+        xRenderer.labels.template.setAll({
+            rotation: -90,
+            centerY: am5.p50,
+            centerX: am5.p100,
+            paddingRight: 15
+        });
+
+        xRenderer.grid.template.setAll({
+            location: 1
         })
-    );
 
-    // Create series
-    var series = chart.series.push(
-        am5percent.PieSeries.new(root, {
-            valueField: "percent",
-            categoryField: "type",
-            fillField: "color",
-            alignLabels: false
+        var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+            maxDeviation: 0.3,
+            categoryField: "country",
+            renderer: xRenderer,
+            tooltip: am5.Tooltip.new(root, {})
+        }));
+
+        var yRenderer = am5xy.AxisRendererY.new(root, {
+            strokeOpacity: 0.1
         })
-    );
 
-    series.slices.template.set("templateField", "sliceSettings");
-    series.labels.template.set("radius", 30);
+        var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+            maxDeviation: 0.3,
+            renderer: yRenderer
+        }));
 
-    // Set up click events
-    series.slices.template.events.on("click", function (event) {
-        console.log(event.target.dataItem.dataContext)
-        if (event.target.dataItem.dataContext.id != undefined) {
-            selected = event.target.dataItem.dataContext.id;
-        } else {
-            selected = undefined;
-        }
-        series.data.setAll(generateChartData());
-    });
+ 
+        var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+            name: "Series 1",
+            xAxis: xAxis,
+            yAxis: yAxis,
+            valueYField: "value",
+            sequencedInterpolation: true,
+            categoryXField: "country",
+            tooltip: am5.Tooltip.new(root, {
+                labelText: "{valueY}"
+            })
+        }));
 
-    // Define data
-    var selected;
-    var types = [{
-        type: "Fossil Energy",
-        percent: 60,
-        color: series.get("colors").getIndex(0),
-        subs: [{
-            type: "Oil",
-            percent: 15
+        series.columns.template.setAll({ cornerRadiusTL: 5, cornerRadiusTR: 5, strokeOpacity: 0 });
+        series.columns.template.adapters.add("fill", function (fill, target) {
+            return chart.get("colors").getIndex(series.columns.indexOf(target));
+        });
+
+        series.columns.template.adapters.add("stroke", function (stroke, target) {
+            return chart.get("colors").getIndex(series.columns.indexOf(target));
+        });
+
+
+ 
+        var data = [{
+            country: "USA",
+            value: 2025
         }, {
-            type: "Coal",
-            percent: 35
+            country: "China",
+            value: 1882
         }, {
-            type: "Nuclear",
-            percent: 20
-        }]
-    }, {
-        type: "Green Energy",
-        percent: 40,
-        color: series.get("colors").getIndex(1),
-        subs: [{
-            type: "Hydro",
-            percent: 15
+            country: "Japan",
+            value: 1809
         }, {
-            type: "Wind",
-            percent: 10
+            country: "Germany",
+            value: 1322
         }, {
-            type: "Other",
-            percent: 5
-        }]
-    }];
-    series.data.setAll(generateChartData());
+            country: "UK",
+            value: 1122
+        }, {
+            country: "France",
+            value: 1114
+        }, {
+            country: "India",
+            value: 984
+        }, {
+            country: "Spain",
+            value: 711
+        }, {
+            country: "Netherlands",
+            value: 665
+        }, {
+            country: "South Korea",
+            value: 443
+        }, {
+            country: "Canada",
+            value: 441
+        }];
+
+        xAxis.data.setAll(data);
+        series.data.setAll(data);
 
 
-    function generateChartData() {
-        var chartData = [];
-        for (var i = 0; i < types.length; i++) {
-            if (i == selected) {
-                for (var x = 0; x < types[i].subs.length; x++) {
-                    chartData.push({
-                        type: types[i].subs[x].type,
-                        percent: types[i].subs[x].percent,
-                        color: types[i].color,
-                        pulled: true,
-                        sliceSettings: {
-                            active: true
-                        }
-                    });
-                }
-            } else {
-                chartData.push({
-                    type: types[i].type,
-                    percent: types[i].percent,
-                    color: types[i].color,
-                    id: i
-                });
-            }
-        }
-        return chartData;
-    }
+        // Make stuff animate on load
+        // https://www.amcharts.com/docs/v5/concepts/animations/
+        series.appear(1000);
+        chart.appear(1000, 100);
 
-});
-
+    }); // end am5.ready()
 </script>

@@ -61,16 +61,10 @@ header {
 .btn-header {
     height: 40px;
     width: 60px;
-    text-decoration: none;
-    list-style-type: none;
-    padding: 10px;
     border-radius: 12px;
     color: white;
     background-color: rgb(255, 128, 0);
-    text-align: center;
-    transition: 1s;
-    align-items: center;
-    margin-right: 13px;
+    transition: s;
 }
 
 
@@ -78,17 +72,29 @@ header {
         font-size: 16px;
         color: white;
         text-decoration: none;
+        padding: 0px;
+        margin: 0px;
+        text-transform:uppercase;
     }
 
+        .btn-header > a:hover{
+            text-decoration: none;
+            list-style: none;
+            text-underline-position: unset;
+            color:white;
+        }
 
-    .btn-header:hover {
-        background-color: rgb(170, 85, 1);
-    }
+
+        .btn-header:hover {
+            background-color: rgb(170, 85, 1);
+            text-decoration: none;
+        }
 
 
 a {
     color: white;
     text-decoration: none;
+    
 }
 
 

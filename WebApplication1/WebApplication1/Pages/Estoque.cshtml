@@ -18,6 +18,7 @@
                 <th scope="col">Produto</th>
                 <th scope="col">Preço</th>
                 <th scope="col">Fornecedor</th>
+                <th scope="col">Quantidade</th>
                 <th scope="col" class="text-end">Remover do Estoque</th>
             </tr>
         </thead>
@@ -28,6 +29,7 @@
                     <td>@Model.listaProdutos[i].Nome</td>
                     <td>R$ @Model.listaProdutos[i].Preco</td>
                     <td>@Model.listaProdutos[i].Fornecedor</td>
+                    <td>@Model.listaProdutos[i].Quantidade</td>
                     <td class="text-end">
                         <a asp-page="/ExcluirProduto" asp-route-id="@Model.listaProdutos[i].Id" asp-area="" class="btn btn-danger" aria-label="Remover Produto do Estoque">
                             <i class="bi bi-trash"></i>

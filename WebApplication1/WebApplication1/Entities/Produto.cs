@@ -7,6 +7,8 @@ namespace WebApplication1.Entities
     {
         public int Id { get; set; }
         public string Nome { get; set; }
+        
+        public int Quantidade { get; set; }
         public string Data { get; set; }
         public string Descricao { get; set; }
         public string Preco { get; set; }
@@ -30,6 +32,17 @@ namespace WebApplication1.Entities
             Preco = preco;
             Fornecedor = fornecedor;
             Id = ID;
+        }
+
+        public Produto(string nome, string data, string descricao, string preco, string fornecedor, int ID, int quantidade)
+        {
+            Nome = nome;
+            Data = data;
+            Descricao = descricao;
+            Preco = preco;
+            Fornecedor = fornecedor;
+            Id = ID;
+            Quantidade = quantidade;
         }
 
     }

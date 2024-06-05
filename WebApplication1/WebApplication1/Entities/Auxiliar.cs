@@ -142,13 +142,15 @@ namespace WebApplication1.Entities
 
                     leitor.Read();
                     int id = leitor.GetInt32(0);
-                    string nome = leitor.GetString(1);
+                    string nome = leitor.GetString(1);         
                     double valor = leitor.GetDouble(2);
                     string fornecedor = leitor.GetString(3);
                     DateTime data = leitor.GetDateTime(5);
                     string descricao = leitor.GetString(6);
+                    int quantidade = leitor.GetInt32(7);
 
-                    Produto temp_produto = new Produto(nome, data.ToString(),descricao, valor.ToString(), fornecedor, id);
+
+                    Produto temp_produto = new Produto(nome, data.ToString(),descricao, valor.ToString(), fornecedor, id, quantidade);
 
 
                     produtos.Add(temp_produto);
