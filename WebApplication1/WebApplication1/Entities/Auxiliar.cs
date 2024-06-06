@@ -6,6 +6,7 @@ namespace WebApplication1.Entities
     static class Auxiliar
     {
 
+        
         public static int GetAtualId(string tabela)
         {
             Database bancoDeDados = new Database();
@@ -281,13 +282,44 @@ namespace WebApplication1.Entities
 
         }
 
-        public static void deleteProduto(int id)
+        public static void deleteProduto(int id,int quantidade)
+        {
+            Database bancoDeDados = new Database();
+            SqlDataReader leitor;
+            int quantidadeProdutos = 0;
+
+
+            string query = $"UPDATE tb_produto set quantidade = quantidade - {quantidade} WHERE id='{id}'";
+
+            bancoDeDados.manipularDado(query);
+
+            bancoDeDados.abrirConexao();
+
+            leitor = bancoDeDados.executarQuery($"select quantidade from tb_produto where id='{id}'");
+            if (leitor.HasRows)
+            {
+                leitor.Read();
+                quantidadeProdutos = leitor.GetInt32(0);
+            }
+
+            bancoDeDados.fechar();
+
+            if (quantidadeProdutos < 0 ) {
+                query = $"DELETE from tb_produto WHERE id='{id}'";
+
+                bancoDeDados.manipularDado(query);
+            }
+
+        }
+
+
+        public static void addProduto(int id, int quantidade)
         {
             Database bancoDeDados = new Database();
             SqlDataReader leitor;
 
 
-            string query = $"DELETE from tb_produto WHERE id='{id}'";
+            string query = $"UPDATE tb_produto set quantidade = quantidade + {quantidade} WHERE id='{id}'";
 
             bancoDeDados.manipularDado(query);
 

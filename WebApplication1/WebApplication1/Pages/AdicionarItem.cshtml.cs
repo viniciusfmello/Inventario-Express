@@ -1,15 +1,15 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Identity.Client;
 using WebApplication1.Entities;
 
 namespace WebApplication1.Pages
 {
-    public class ExcluirProdutoModel : PageModel
+    public class AdicionarItemModel : PageModel
     {
-        
-
         [BindProperty]
         public int Quantidade { get; set; }
+
         public IActionResult OnGet(int id)
         {
             if (!LoginuserModel.isUsuarioLogado)
@@ -17,18 +17,13 @@ namespace WebApplication1.Pages
                 return RedirectToPage("/Loginuser");
             }
             return Page();
-            //Auxiliar.deleteProduto(id);
-
-
         }
-        
-        public IActionResult OnPost(int id)
+
+        public IActionResult OnPost(int Id)
         {
+            Auxiliar.addProduto(Id, Quantidade);
 
-            Auxiliar.deleteProduto(id, Quantidade);
-            return RedirectToPage("/Index");
+            return RedirectToPage("/Estoque");
         }
-
-
     }
 }

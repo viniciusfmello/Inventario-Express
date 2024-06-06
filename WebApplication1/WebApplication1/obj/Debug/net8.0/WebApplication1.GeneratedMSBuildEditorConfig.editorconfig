@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\VisualCode\3-semestre\Inventario-Express\WebApplication1\WebApplication1
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/VisualCode/3-semestre/Inventario-Express/WebApplication1/WebApplication1/Pages/AdicionarItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRpY2lvbmFySXRlbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/VisualCode/3-semestre/Inventario-Express/WebApplication1/WebApplication1/Pages/Cadastro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FkYXN0cm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

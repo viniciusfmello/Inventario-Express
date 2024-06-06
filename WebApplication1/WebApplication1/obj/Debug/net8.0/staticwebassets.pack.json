@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\WebApplication1.bundle.scp.css"
     },
     {
+      "Id": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\wwwroot\\css\\AdicionarItemcss.css",
+      "PackagePath": "staticwebassets\\css\\AdicionarItemcss.css"
+    },
+    {
       "Id": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\wwwroot\\css\\Cadastrocss.css",
       "PackagePath": "staticwebassets\\css\\Cadastrocss.css"
     },

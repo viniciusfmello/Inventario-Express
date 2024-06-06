@@ -180,3 +180,21 @@ ul {
     margin-top: 70px;
     width: 100%;
 }
+
+.bi-bag-plus::before {
+    content: "\f176";
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+

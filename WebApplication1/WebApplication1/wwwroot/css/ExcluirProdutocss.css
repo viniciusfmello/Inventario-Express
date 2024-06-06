@@ -1,77 +1,4 @@
-﻿
-.form {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-}
-
-
-.form-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-
-.title h1 {
-    font-size: 24px;
-    margin: 0;
-}
-
-
-.input-group {
-    margin-bottom: 20px;
-}
-
-
-.input-box {
-    margin-bottom: 20px;
-}
-
-
-    .input-box label {
-        font-size: 18px;
-        margin-bottom: 5px;
-    }
-
-
-    .input-box input {
-        width: 100%;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-    }
-
-
-    .input-box textarea {
-        width: 100%;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-    }
-
-
-.btn-primary {
-    background-color: rgb(255, 128, 0);
-    border: none;
-}
-
-
-    .btn-primary:hover {
-        background-color: rgb(170, 85, 1);
-    }
-
-
-.form {
-    margin: 100px 250px;
-    display: flex;
-    width: 100%;
-}
-
-body {
+﻿body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     margin: 0;
@@ -84,15 +11,16 @@ body {
 
 /Dentro do card/
 
-.container {
+/*.container {
     max-width: 400px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     text-align: center;
+    border: 2px solid black; /* Adicionando a borda preta */
 }
-
+*/
 h2 {
     margin-top: 0;
 }
@@ -127,7 +55,27 @@ input[type="submit"] {
 .container {
     width: 300px;
     margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    align-content: center;
 }
+
+#btn-login{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+#btn-login:hover {
+    transition: 1s;
+    background-color: red;
+    color: white;
+}
+
+#quantidade{
+    width: 100%;
+}
+
 
 h2 {
     text-align: center;
@@ -167,9 +115,4 @@ input[type="button"]:hover {
     justify-content: space-between;
 }
 
-.cancel-button-container {
-    margin-top: 10px; /* Adiciona margem superior igual à classe .button-container */
-    display: flex; /* Ativa o flexbox */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-}
 

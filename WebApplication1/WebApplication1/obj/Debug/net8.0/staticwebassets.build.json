@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "D9L5CNpQYQZpzuQs7xS1cbTqSFYJCgt0p/SEN+1o3nE=",
+  "Hash": "noEXD2JHFD5t1t3AUaT/SQ+qWlAj8WNAuajJ8O3MuFQ=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebApplication1.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\wwwroot\\css\\AdicionarItemcss.css",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "css/AdicionarItemcss.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\AdicionarItemcss.css"
     },
     {
       "Identity": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\wwwroot\\css\\Cadastrocss.css",

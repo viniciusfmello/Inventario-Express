@@ -7,23 +7,17 @@
 <link rel="" href="~/js/ExcluirProdutojs.js" asp-append-version="true" />
 <link rel="stylesheet" href="~/css/ExcluirProdutocss.css" asp-append-version="true" />
 
-<div class="container">
+<div class="container-prod">
     <h2>Remover Produto</h2>
-    <form asp-page-handler="Remove" method="post">
+    <form  method="post">
         <label for="quantidade">Quantidade do produto a remover:</label>
         <div class="input-with-total">
             <input asp-for="@Model.Quantidade" type="number" id="quantidade" name="quantidade" min="1" required>
-            <span id="total-remover">0/50</span> <!-- Elemento para mostrar o total -->
         </div>
         <div class="button-container">
             <button id="btn-login">Remover</button>
         </div>
     </form>
-    <form asp-page-handler="Cancela" method="post">
-        <div class="button-container cancel-button-container">
-            <!-- Div adicionada para centralizar o botão cancelar -->
-            <button id="btn-login">Cancelar</button>
-        </div>
-    </form>
+
 
 </div>
