@@ -6,52 +6,63 @@
 
 <link rel="stylesheet" href="~/css/InfoProdutocss.css" asp-append-version="true" />
 
+
+
 <div class="center-container">
 <div class="container mt-4 card-1">
-    <div class="row">
+        @if (Model.ListaDeProdutosFornecedor.Count == 0)
+        {
+            <h1>Nao tem produtos a visualizar</h1>
+            <p>Volte novamente mais tarde!</p>
+        }
+        else
+        {
+            <div class="row">
 
 
-        
-        <div class="col-md-6 mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Nome dos produtos</h5>
-                    @for (int i = 0; i < Model.ListaDeProdutosFornecedor.Count; i++)
-                    {
-                        <p class="card-text"><strong>@Model.ListaDeProdutosFornecedor[i].Nome</strong></p>
-                    }
+
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome dos produtos</h5>
+                            @for (int i = 0; i < Model.ListaDeProdutosFornecedor.Count; i++)
+                            {
+                                <p class="card-text"><strong>@Model.ListaDeProdutosFornecedor[i].Nome</strong></p>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Data de validade</h5>
+                            @for (int i = 0; i < Model.ListaDeProdutosFornecedor.Count; i++)
+                            {
+                                <p class="card-text"><strong>@Model.ListaDeProdutosFornecedor[i].Data</strong></p>
+                            }
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6 mb-4">
 
 
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Data de validade</h5>
-                    @for (int i = 0; i < Model.ListaDeProdutosFornecedor.Count; i++)
-                    {
-                        <p class="card-text"><strong>@Model.ListaDeProdutosFornecedor[i].Data</strong></p>
-                    }
+            <!-- Big Card -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            @for (int i = 0; i < Model.ListaDeProdutosFornecedor.Count; i++)
+                            {
+                                <h6>Descrição do produto <strong>@Model.ListaDeProdutosFornecedor[i].Nome:</strong></h6>
+                                <p class="card-text">@Model.ListaDeProdutosFornecedor[i].Descricao</p>
+                            }
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        }
 
-
-    <!-- Big Card -->
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    @for (int i = 0; i < Model.ListaDeProdutosFornecedor.Count; i++)
-                    {
-                        <h6>Descrição do produto <strong>@Model.ListaDeProdutosFornecedor[i].Nome:</strong></h6>
-                        <p class="card-text">@Model.ListaDeProdutosFornecedor[i].Descricao</p>
-                    }
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 </div>

@@ -26,7 +26,7 @@ namespace WebApplication1.Pages
         {
 
             Auxiliar.deleteProduto(id, Quantidade);
-            return RedirectToPage("/Index");
+            return RedirectToPage("/Estoque");
         }
 
 

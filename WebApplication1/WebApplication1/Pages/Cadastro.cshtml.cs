@@ -25,7 +25,7 @@ namespace WebApplication1.Pages
         public string Fornecedor { get; set; }
 
         [BindProperty]
-        public List<string> ListaFornecedores { get; set; }
+        public List<Fornecedor> ListaFornecedores { get; set; }
 
         public IActionResult OnGet()
         {
@@ -33,13 +33,15 @@ namespace WebApplication1.Pages
             {
                 return RedirectToPage("/Loginuser");
             }
+
+            ListaFornecedores = Auxiliar.GetListaDeFornecedor();
             return Page();
         }
         public IActionResult OnPost()
         {
             Database bancoDeDados = new Database();
             SqlDataReader leitor;
-            
+
             Produto produto = new Produto(Nome,Data,Descricao,Preco,Fornecedor);
 
             string query = $"insert into tb_produto (id, nome, Quantidade, data_validade, descricao, preco, nome_fornecedor) values " +

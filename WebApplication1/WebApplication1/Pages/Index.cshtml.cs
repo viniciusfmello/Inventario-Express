@@ -33,6 +33,7 @@ namespace WebApplication1.Pages
             totalPreco =0;
 
             listaProdutos = Auxiliar.GetListaDeProdutos();
+
             for(int i = 0 ; i < listaProdutos.Count ; i++)
             {
                 totalPreco += Convert.ToDouble(listaProdutos[i].Preco) * listaProdutos[i].Quantidade;
