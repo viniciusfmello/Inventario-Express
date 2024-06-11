@@ -1,0 +1,1 @@
+﻿Server=inventarioexpress.database.windows.net;Database=InventarioExpress;User Id=AzureSA;Password=InventarioExpress2024;

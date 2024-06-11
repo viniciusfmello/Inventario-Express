@@ -18,7 +18,6 @@ public class Database
 	{
 		conexao = new SqlConnection(Connection);
 		conexao.Open();
-
 	}
 	public void fechar()
 	{
@@ -46,5 +45,12 @@ public class Database
 	{
 		abrirConexao();
 		Console.WriteLine(conexao.State);
+	}
+
+	public SqlConnection conectionOpen()
+	{
+		conexao = new SqlConnection(Connection);
+		conexao.Open();
+		return conexao;
 	}
 }

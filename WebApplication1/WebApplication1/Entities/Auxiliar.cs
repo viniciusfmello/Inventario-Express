@@ -3,7 +3,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WebApplication1.Entities
 {
-    static class Auxiliar
+    public static class Auxiliar
     {
 
         
