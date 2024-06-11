@@ -1,12 +1,10 @@
 ﻿body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
+    background-color: #f2f2f2;  
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+   
 }
 
 .container {
@@ -102,4 +100,20 @@ input[type="button"]:hover {
 
 .button-container{
     justify-content: space-around;
+}
+
+
+#btn-cancelar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#link-cancelar{
+    color: white;
+    text-decoration: none;
 }

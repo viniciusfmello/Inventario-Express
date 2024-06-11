@@ -4,7 +4,6 @@
     ViewData["Title"] = "Excluir Produto";
 }
 
-<link rel="" href="~/js/ExcluirProdutojs.js" asp-append-version="true" />
 <link rel="stylesheet" href="~/css/ExcluirProdutocss.css" asp-append-version="true" />
 
 <div class="container-prod">
@@ -16,6 +15,7 @@
         </div>
         <div class="button-container">
             <button id="btn-login">Remover</button>
+            <button id="btn-cancelar" type="submit" value="Cancelar"><a id="link-cancelar" asp-page="/Estoque" asp-route-id="" asp-area="" aria-label="Cancelar">Cancelar</a></button>
         </div>
     </form>
 

@@ -1,73 +1,58 @@
-﻿body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/Dentro do card/
-
-/*.container {
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-    text-align: center;
-    border: 2px solid black; /* Adicionando a borda preta */
-}
-*/
-h2 {
-    margin-top: 0;
-}
-
-label {
+﻿label {
     font-weight: bold;
 }
 
-input[type="number"] {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-}
-
-    input[type="submit"]:hover {
-        background-color: #0056b3;
-    }
-
 .container {
-    width: 300px;
-    margin: 0 auto;
-    border: 3px solid black;
+    padding-top: 250px;
+    width: 450px;
+    height: 250px;
     border-radius: 10px;
-    padding: 20px;
-    align-content: center;
+    align-content: center;  
 }
 
-#btn-login{
-    border-radius: 5px;
-    width: 100%;
-    height: 100%;
+.container-prod{
+    border: solid 3px black;
+    padding: 20px;
+    border-radius: 10px
 }
+
+.button-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#btn-login {
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    height: 100%;
+    background-color: #212529;
+    color: white;
+}
+
+#btn-cancelar {
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    height: 100%;
+    background-color: #212529;
+    color: white;
+}
+
+#btn-cancelar:hover{
+    background-color: red;
+    transition: 0.7s;
+}
+
+#link-cancelar {
+    color: white;
+    text-decoration: none;
+}
+
+
 #btn-login:hover {
-    transition: 1s;
+    transition: 0.7s;
     background-color: red;
     color: white;
 }
@@ -82,8 +67,7 @@ h2 {
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
+    display: block
 }
 
 input[type="number"],
@@ -109,10 +93,7 @@ input[type="button"]:hover {
     background-color: #ff0202;
 }
 
-.button-container {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
+
+.menu-lateral{
+    height: 100%;
 }
-
-

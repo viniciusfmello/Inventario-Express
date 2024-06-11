@@ -13,14 +13,11 @@
         @if (Model.ListaDeProdutosFornecedor.Count == 0)
         {
             <h1>Nao tem produtos a visualizar</h1>
-            <p>Volte novamente mais tarde!</p>
+            <p>Cadastre algum produto e tente novamente!</p>
         }
         else
         {
             <div class="row">
-
-
-
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body">
@@ -28,6 +25,7 @@
                             @for (int i = 0; i < Model.ListaDeProdutosFornecedor.Count; i++)
                             {
                                 <p class="card-text"><strong>@Model.ListaDeProdutosFornecedor[i].Nome</strong></p>
+                                <hr />
                             }
                         </div>
                     </div>
@@ -41,6 +39,7 @@
                             @for (int i = 0; i < Model.ListaDeProdutosFornecedor.Count; i++)
                             {
                                 <p class="card-text"><strong>@Model.ListaDeProdutosFornecedor[i].Data</strong></p>
+                                <hr />
                             }
                         </div>
                     </div>

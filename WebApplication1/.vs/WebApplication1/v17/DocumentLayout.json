@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|c:\\visualcode\\3-semestre\\inventario-express\\webapplication1\\webapplication1\\wwwroot\\css\\adicionaritemcss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\wwwroot\\css\\adicionaritemcss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|c:\\visualcode\\3-semestre\\inventario-express\\webapplication1\\webapplication1\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|c:\\visualcode\\3-semestre\\inventario-express\\webapplication1\\webapplication1\\wwwroot\\css\\excluirprodutocss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\wwwroot\\css\\excluirprodutocss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|c:\\visualcode\\3-semestre\\inventario-express\\webapplication1\\webapplication1\\wwwroot\\css\\adicionaritemcss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\wwwroot\\css\\adicionaritemcss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B373473-F74A-4D7A-B8CA-D55D80DBF602}|WebApplication1\\WebApplication1.csproj|c:\\visualcode\\3-semestre\\inventario-express\\webapplication1\\webapplication1\\pages\\adicionaritem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -22,22 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdicionarItemcss.css",
-              "DocumentMoniker": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\wwwroot\\css\\AdicionarItemcss.css",
-              "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\css\\AdicionarItemcss.css",
-              "ToolTip": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\wwwroot\\css\\AdicionarItemcss.css",
-              "RelativeToolTip": "WebApplication1\\wwwroot\\css\\AdicionarItemcss.css",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAAAGcAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-06-06T15:21:28.737Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -46,9 +32,9 @@
               "RelativeDocumentMoniker": "WebApplication1\\Pages\\AdicionarItem.cshtml",
               "ToolTip": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\Pages\\AdicionarItem.cshtml",
               "RelativeToolTip": "WebApplication1\\Pages\\AdicionarItem.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABRAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-06T15:21:42.405Z",
+              "WhenOpened": "2024-06-11T00:10:09.552Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -62,15 +48,28 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApplication1\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAHUAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-11T01:01:14.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ExcluirProdutocss.css",
-              "DocumentMoniker": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\wwwroot\\css\\ExcluirProdutocss.css",
-              "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\css\\ExcluirProdutocss.css",
-              "ToolTip": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\wwwroot\\css\\ExcluirProdutocss.css",
-              "RelativeToolTip": "WebApplication1\\wwwroot\\css\\ExcluirProdutocss.css",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAswHUAAAAAAAAA",
+              "Title": "AdicionarItemcss.css",
+              "DocumentMoniker": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\wwwroot\\css\\AdicionarItemcss.css",
+              "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\css\\AdicionarItemcss.css",
+              "ToolTip": "C:\\VisualCode\\3-semestre\\Inventario-Express\\WebApplication1\\WebApplication1\\wwwroot\\css\\AdicionarItemcss.css",
+              "RelativeToolTip": "WebApplication1\\wwwroot\\css\\AdicionarItemcss.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-06-06T15:31:32.05Z",
+              "WhenOpened": "2024-06-11T00:14:24.676Z",
               "EditorCaption": ""
             }
           ]
